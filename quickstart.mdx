@@ -1,0 +1,74 @@
+---
+title: "Quickstart"
+description: "Get up and running in under 3 minutes."
+---
+
+This guide walks you through creating your first documentation page.
+
+## Prerequisites
+
+- A typemark account ([sign up free](https://typemark.dev))
+- Something to document
+
+That's it. No CLI, no build tools, no deploy pipeline.
+
+## Create your first page
+
+<Steps>
+  <Step title="Open the editor">
+    Click **Editor** from your project's home page. You'll see the visual editor with this starter content.
+  </Step>
+  <Step title="Write your content">
+    Start typing. Use the `/` slash command to insert headings, code blocks, callouts, and more.
+  </Step>
+  <Step title="Publish">
+    Your docs are already live. Every save publishes instantly to your typemark.dev subdomain.
+  </Step>
+</Steps>
+
+## Add a code example
+
+Documentation often includes code. Here's how it looks:
+
+<Tabs>
+  <Tab title="JavaScript">
+    ```javascript
+    // Your code here
+    const docs = await typemark.publish({
+      title: "My Docs",
+      content: "Hello, world!",
+    });
+    ```
+  </Tab>
+  <Tab title="Python">
+    ```python
+    # Your code here
+    docs = typemark.publish(
+        title="My Docs",
+        content="Hello, world!",
+    )
+    ```
+  </Tab>
+  <Tab title="cURL">
+    ```bash
+    curl -X POST https://api.example.com/docs \
+      -H "Content-Type: application/json" \
+      -d '{"title": "My Docs", "content": "Hello, world!"}'
+    ```
+  </Tab>
+</Tabs>
+
+<Callout type="info">
+  Code blocks support syntax highlighting for 100+ languages. Add a language after the opening backticks.
+</Callout>
+
+## What's next?
+
+<CardGroup cols={2}>
+  <Card title="Components reference" icon="rectangle-stack" href="/guides/components">
+    See all the building blocks available for your docs.
+  </Card>
+  <Card title="Customize your site" icon="cog-6-tooth" href="/guides/components">
+    Set your brand colors, logo, and navigation structure.
+  </Card>
+</CardGroup>

@@ -1,0 +1,109 @@
+---
+title: "Components"
+description: "All the building blocks you can use in your docs."
+---
+
+typemark supports rich MDX components that make your docs interactive and beautiful. Here's every component you can use.
+
+## Callouts
+
+Highlight important information with colored callouts.
+
+<Callout type="info" title="Info">
+  Use this for general information and helpful context.
+</Callout>
+
+<Callout type="warning" title="Warning">
+  Use this when something could go wrong if the reader isn't careful.
+</Callout>
+
+<Callout type="danger" title="Danger">
+  Use this for critical warnings — irreversible actions, security risks.
+</Callout>
+
+<Callout type="tip" title="Tip">
+  Use this for best practices and pro tips.
+</Callout>
+
+## Tabs
+
+Group related content into switchable tabs. Great for showing code in multiple languages.
+
+<Tabs>
+  <Tab title="React">
+    ```jsx
+    function App() {
+      return <h1>Hello, world!</h1>
+    }
+    ```
+  </Tab>
+  <Tab title="Vue">
+    ```html
+    <template>
+      <h1>Hello, world!</h1>
+    </template>
+    ```
+  </Tab>
+</Tabs>
+
+## Cards
+
+Link to other pages with visual cards. Use icons from [Heroicons](https://heroicons.com).
+
+<CardGroup cols={2}>
+  <Card title="Introduction" icon="book-open" href="/introduction">
+    Start here to learn the basics.
+  </Card>
+  <Card title="Quickstart" icon="rocket-launch" href="/quickstart">
+    Get up and running fast.
+  </Card>
+</CardGroup>
+
+## Steps
+
+Show a numbered sequence of actions.
+
+<Steps>
+  <Step title="First step">
+    Do this first.
+  </Step>
+  <Step title="Second step">
+    Then do this.
+  </Step>
+  <Step title="Done">
+    You're all set.
+  </Step>
+</Steps>
+
+## Accordion
+
+Collapse content that readers may not always need.
+
+<Accordion title="Click to expand">
+  This content is hidden by default. Use accordions for FAQs, troubleshooting, or optional details.
+</Accordion>
+
+## Code blocks
+
+Syntax-highlighted code with optional filename labels:
+
+```javascript title="app.js"
+import express from 'express';
+const app = express();
+app.get('/', (req, res) => res.send('Hello!'));
+app.listen(3000);
+```
+
+## Tables
+
+Standard markdown tables:
+
+| Feature | Free | Pro | Business |
+|---------|------|-----|----------|
+| Pages | Unlimited | Unlimited | Unlimited |
+| Team members | 2 | 4 | Unlimited |
+| Custom domain | No | Yes | Yes |
+
+---
+
+That's everything. Use the `/` slash command in the editor to insert any of these blocks.

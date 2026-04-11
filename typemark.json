@@ -1,0 +1,35 @@
+{
+  "$schema": "https://typemark.dev/schema.json",
+  "name": "Fidannish",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/components"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "colors": {
+    "primary": "#E8503A"
+  },
+  "features": {
+    "search": true,
+    "theme_toggle": true,
+    "table_of_contents": true,
+    "copy_code_button": true
+  }
+}
