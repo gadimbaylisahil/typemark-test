@@ -16,7 +16,8 @@
           {
             "group": "Guides",
             "pages": [
-              "guides/components"
+              "guides/components",
+              "guide-2"
             ]
           }
         ]
