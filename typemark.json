@@ -17,8 +17,7 @@
             "group": "Guides",
             "pages": [
               "guides/components",
-              "guide-2",
-              "newtitle"
+              "guides/newfile"
             ]
           }
         ]
